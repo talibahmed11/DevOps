@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your_username/your_repository.git'
+                git 'https://github.com/talibahmed11/DevOps.git'
             }
         }
 
@@ -16,6 +16,7 @@ pipeline {
 
         stage('Run') {
             steps {
+                // Run your program and parse the XML
                 sh './my_program catalog.xml'
             }
         }
@@ -23,6 +24,7 @@ pipeline {
 
     post {
         always {
+            // Clean up actions (if any)
         }
     }
 }
