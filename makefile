@@ -1,7 +1,10 @@
-all:  hello.exe
-hello.exe:  hello.o
-	gcc -o hello.exe hello.o
-hello.o:  hello.c
-	gcc -c hello.c
+all: main.exe
+
+main.exe: main.o
+	gcc -o main.exe main.o -lxml2
+
+main.o: main.c
+	gcc -c main.c -I/usr/include/libxml2
+
 clean:
-	rm hello.o hello.exe
+	rm -f main.o main.exe
