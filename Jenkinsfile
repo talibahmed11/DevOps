@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'g++ -o my_program source_code.cpp'
+                bat 'g++ -o my_program "C++ source code.txt"'
             }
         }
 
