@@ -20,7 +20,7 @@ pipeline {
                 // Build your C++ application
                 // You mentioned the source code is in a file named `source_code.txt` in GitHub, so the command would likely need to be modified
                 // to reflect the correct filename, which might be something like `source_code.txt` in your GitHub repository
-                bat 'g++ -o my_program source_code.txt'  // Use source_code.txt if that's your actual file
+                bat 'g++ -o my_program C++ source code.txt'  // Use source_code.txt if that's your actual file
             }
         }
 
