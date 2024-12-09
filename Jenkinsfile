@@ -10,14 +10,14 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'g++ -o my_program source_code.cpp'
+                bat 'g++ -o my_program source_code.cpp'
             }
         }
 
         stage('Run') {
             steps {
                 // Run your program and parse the XML
-                sh './my_program catalog.xml'
+                bat './my_program catalog.xml'
             }
         }
     }
