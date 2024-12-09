@@ -1,6 +1,6 @@
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -I/usr/include/libxml2/libxml
+CFLAGS = -Wall -I/cygdrive/c/cygwin64/usr/include/libxml2/libxml
 LIBS = -L/cygdrive/c/cygwin64/usr/lib -lxml2
 
 # Target executable
